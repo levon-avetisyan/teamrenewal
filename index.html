@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Team Renewal</title>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Fredoka+One|Nunito:300,400,600,700,800,900"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="header-logo">
+        <a href="./index.html">
+            <img src="./img/header-logo.png" alt="Team Renewal Logo">
+        </a>
+    </div>
+    <div class="header-nav d-none d-lg-block">
+        <nav>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="./about.html">About RENEWAL</a></li>
+                <li class="list-inline-item"><a id="navLinkLeader">Leaderboard</a></li>
+                <li class="list-inline-item"><a href="">Register</a></li>
+                <li class="list-inline-item"><a href="/info-for-runners"><b>Marathon 2019</b></a></li>
+                <li class="list-inline-item">
+                    <button class="header-button" onclick="window.location.href='./donate.html'">DONATE</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--<div class="hamburger d-none d-sm-block d-md-block d-lg-none" data-toggle="collapse" data-target="#navbarNav" id="hamburgerToggle">-->
+    <!--x-->
+    <!--</div>-->
+    <nav class="navbar-collapse collapse main-nav" id="navbarNav">
+        <div class="container">
+            <ul class="sections-list list-inline list-unstyled">
+                <li class="list-inline-item"><a id="linkServices" href="#services">SERVICES</a></li>
+                <li class="list-inline-item"><a id="linkWorks" href="#works">WORKS</a></li>
+                <li class="list-inline-item"><a id="linkContact" href="#contacts">CONTACT US</a></li>
+            </ul>
+            <ul class="services-list-top list-unstyled">
+                <li>UI/UX Design</li>
+                <li>Front-End</li>
+                <li>Web apps</li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="section-hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 class="display-3">Come be a part of <br>
+            <span>TEAM RENEWAL</span></h1>
+        <h2><b>2019</b> FULL MARATHON AND HALF MARATHON</h2>
+        <h3>SUNDAY JANUARY <span class="day-numb">27</span>, <span>2019</span></h3>
+        <div class="hero-actions">
+            <button class="hero-button" onclick="window.location.href='./info-for-runners.html'">
+                COME ALONG
+                <span class="btn-label"><i class="fas fa-running"></i></span>
+            </button>
+            <button id="sponsorAction" class="hero-button hero-button-secondary">
+                SPONSOR A RUNNER
+                <span class="btn-label"><i class="fas fa-running"></i></span>
+            </button>
+        </div>
+        <div class="hero-stats">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="stat-wrap">
+                            <h4 class="display-4">$1800</h4>
+                            <p>Raised</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-wrap">
+                            <h4 class="display-4">2 Days</h4>
+                            <p>Left</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main">
+    <section id="leaderboard" class="section-leaderboard">
+        <div class="container">
+            <h2 class="display-3 text-center">
+                Our Runners
+            </h2>
+            <div class="board">
+                <div class="row">
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-ld-2 col-sm-6 col-12">
+                        <div class="runner-data-wrap">
+                            <div class="runner-data">
+                                <div class="rounded-circle">
+                                    <img src="./img/running.png">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p>$ 10000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-link">View all runners</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-about">
+        <div class="container">
+            <h2 class="display-3 text-center">
+                About Marathon
+            </h2>
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <article>
+                            <h3>
+                                <b>RENEWEL HELPS</b>
+                                <small class="text-muted">Win the race against time for those who need a kidney.
+                                    Join us in the race to support this life saving project.
+                                </small>
+                            </h3>
+                            <p>Come be a part of <span>TEAM RENEWAL</span> in the <span>2019 FULL MARATHON AND HALF MARATHON.
+                                        The Miami Marathon</span> will take place on
+                                <span>SUNDAY JANUARY 27, 2019</span>.
+                            </p>
+                            <p>If you will be joining us from out of town, we will be glad to help you find
+                                accommodations for Shabbos.
+                                On Motzei Shabbos we will enjoy a pre-marathon Melave Malka.
+                            </p>
+                            <p>At that time, you will receive your Official 2019 Team Renewal Marathon T-Shirt and
+                                Bib Number along with all of the relevant
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-12  col-sm-12 col-md-6">
+                        <div class="about-img-wrap">
+                            <img src="./img/about-us.png" alt="ABOUT TEAM RENEWAL">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="infoForRunners" class="section-info-discount">
+        <div class="container">
+            <h2 class="display-4 text-center">
+                Race instructions and information
+            </h2>
+            <div class="steps-content">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="step-wrap pb-5 p-lg-0">
+                            <div class="step-desc text-center">
+                                <p class="step-desc-text">In order to register as an official runner,<br> go to the web
+                                    site
+                                    <a target="_blank" href="www.themiamimarathon.com">www.themiamimarathon.com</a>
+                                </p>
+                                <span class="step-number"><p>1</p></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="step-wrap pb-5 p-lg-0">
+                            <div class="step-desc text-center">
+                                <p class="step-desc-text">Use this discount code in order to receive a
+                                    <span class="numb">10</span><i class="fas fa-percent"></i> discount:
+                                </p>
+                                <p class="discount-code"><b>TEAMRENEWAL19</b></p>
+                                <span class="step-number"><p>2</p></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="step-wrap pb-5 p-lg-0">
+                            <div class="step-desc text-center">
+                                <p class="step-desc-text">Once you are officially registered with Miami Marathon, please
+                                    email
+                                    <a href="mailto:teamrenewal@renewal.org">teamrenewal@renewal.org</a><br>
+                                    Or send <span class="whatsapp"><i class="fab fa-whatsapp"></i>WhatsApp</span> to <a
+                                            href="tel:1-786-608-7166">1-786-608-7166</a>
+                                    to notify us so we can add you to our official Team Renewal Runners’ Whatsapp Group.
+                                    And you will be added to our fundraising web site.
+                                </p>
+                                <span class="step-number"><p>3</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-become-donor">
+        <h2 class="display-4 text-center">
+            Fundraising
+        </h2>
+        <div class="donor-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <div class="about-img-wrap">
+                            <img src="./img/donate.png" alt="ABOUT TEAM RENEWAL">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <article>
+                            <h3>
+                                <b>2019 Team Renewal Miami Marathon: </b>
+                                <small class="text-muted">Spreading awareness for becoming a Living Kidney Donor and
+                                    supporting this incredible cause.
+                                </small>
+                            </h3>
+                            <p>Every Team Member will aspire to raise <span><i
+                                            class="fas fa-dollar-sign"></i>1,800*</span>
+                                up to the date of the Marathon.</p>
+                            <p><span>100% </span>of your fundraising efforts will go directly to Renewal to assure
+                                that another Live Donor will have the ability to succeed on their personal, unique
+                                journey towards saving a life.
+                            </p>
+                            <p>
+                                2019 Team Renewal Miami Marathon:
+                                <small class="text-muted">*You will not be charged if you are not successful in
+                                    attaining your goal.
+                                </small>
+                            </p>
+                            <button class="button-donate" onclick="window.location.href='./donate.html'">DONATE</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-contact">
+        <div class="container text-center">
+            <div class="contact-form-wrap">
+                <form action="">
+                    <h2 class="text-center">
+                        Get in touch
+                    </h2>
+                    <p class="text-center">We are happy to hear your feedback, comments and suggestions.</p>
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input id="nameInput" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="text" id="emailInput" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="textInput">Message</label>
+                        <textarea id="textInput" resize="disabled" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group form-action">
+                        <button class="hero-button">SEND</button>
+                    </div>
+                </form>
+
+                <address>
+                    <p>We are happy to hear your feedback, comments and suggestions.</p>
+                    <p>
+
+                        <b><i class="fas fa-map-marker-alt"></i> </b>5904 13th Avenue Brooklyn, NY 11219 <br>
+                        <b><i class="fas fa-phone"></i> </b><a href="tel:718-431-9831">718-431-9831</a>
+                    </p>
+                </address>
+            </div>
+        </div>
+    </section>
+</section>
+
+</body>
+<footer class="main-footer">
+    <div class="container text-center">
+        <div class="copyright text-muted">
+            &copy 2018 TEAM RENEWAL
+        </div>
+    </div>
+</footer>
+</html>
