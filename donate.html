@@ -2,65 +2,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>Team Renewal</title>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/all.js"></script>
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/vendor/jquery.zoom.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Fredoka+One|Nunito:300,400,600,700,800,900"
           rel="stylesheet">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body class="donate-page">
-<header class="main-header">
-    <div class="header-logo">
-        <a href="./index.html">
-            <img src="./img/header-logo.png" alt="Team Renewal Logo">
-        </a>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/"> <img src="./img/header-logo.png" alt="Team Renewal Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/about">About Renewal</a></li>
+            <li class="nav-item"><a class="nav-link" href="/marathon"><b>Marathon 2019</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="/#leaderboard">Runners</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#instructions">Register</a></li>
+            <li class="d-none d-lg-block nav-item menu-item-donate">
+                <button class="header-button" onclick="window.location.href='/donate'">DONATE</button>
+            </li>
+        </ul>
     </div>
-    <div class="header-nav d-none d-lg-block">
-        <nav>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="./about.html">About RENEWAL</a></li>
-                <li class="list-inline-item"><a id="navLinkLeader">Leaderboard</a></li>
-                <li class="list-inline-item"><a href="">Register</a></li>
-                <li class="list-inline-item"><a href="./info-for-runners.html"><b>Marathon 2019</b></a></li>
-                <li class="list-inline-item">
-                    <button class="header-button" onclick="window.location.href='./donate.html'">DONATE</button>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <!--<div class="hamburger d-none d-sm-block d-md-block d-lg-none" data-toggle="collapse" data-target="#navbarNav" id="hamburgerToggle">-->
-    <!--x-->
-    <!--</div>-->
-    <nav class="navbar-collapse collapse main-nav" id="navbarNav">
-        <div class="container">
-            <ul class="sections-list list-inline list-unstyled">
-                <li class="list-inline-item"><a id="linkServices" href="#services">SERVICES</a></li>
-                <li class="list-inline-item"><a id="linkWorks" href="#works">WORKS</a></li>
-                <li class="list-inline-item"><a id="linkContact" href="#contacts">CONTACT US</a></li>
-            </ul>
-            <ul class="services-list-top list-unstyled">
-                <li>UI/UX Design</li>
-                <li>Front-End</li>
-                <li>Web apps</li>
-            </ul>
-        </div>
-    </nav>
-</header>
+</nav>
+
 <section class="section-donate">
     <div class="container">
         <h2 class="display-4 text-center">
-            Your Donation
+            Support Renewal
         </h2>
         <h3 class="text-muted text-center donate-page-subtitle">
             <small>
-                Mesivta of Eatontown opens its doors to every student of all walks of life. It is a yeshiva, a family,
-                and a
-                home. The warmth and love that the Rebbeim instill in each Talmid is cherished and felt for many years.
-                Help
-                me reach my goal by sponsoring this upcoming event and help this worth institution continue doing its
-                special and holy work. Every donation helps and is greatly appreciated.
+                Not everyone can give a kidney, but anyone can help support the people who do. Each transplant costs
+                $18,900, above and beyond the cost of the actually surgery. Your generous contribution helps Renewal
+                find matches between donors and patients, helps us guide the donor throughout the donation process, and
+                helps us educate the public about kidney disease.
             </small>
         </h3>
         <div class="donate-form-wrap">
@@ -85,7 +65,8 @@
                         </label></div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-5 col-md-3 col-form-label"><i class="fa fa-dollar-sign"></i><b> Custom amount</b></label>
+                    <label for="" class="col-sm-5 col-md-3 col-form-label"><i class="fa fa-dollar-sign"></i><b> Custom
+                            amount</b></label>
                     <div class="col-sm-7 col-md-9">
                         <input type="text" class="form-control" id="">
                     </div>
@@ -147,8 +128,8 @@
 </section>
 <footer class="main-footer">
     <div class="container text-center">
-        <div class="copyright text-muted">
-            &copy 2018 TEAM RENEWAL
+        <div class="powered-by-banquest">
+            <img width="100%" src="./img/banquest.png" alt="Powered by Banquest">
         </div>
     </div>
 </footer>

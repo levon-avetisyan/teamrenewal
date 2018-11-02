@@ -2,56 +2,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>Team Renewal</title>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/all.js"></script>
-    <link href="h.ttps://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Fredoka+One|Nunito:300,400,600,700,800,900"
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/vendor/jquery.zoom.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Fredoka+One|Nunito:300,400,600,700,800,900"
           rel="stylesheet">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body class="about-page">
-<header class="main-header">
-    <div class="header-logo">
-        <a href="./index.html">
-            <img src="./img/header-logo.png" alt="Team Renewal Logo">
-        </a>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="/"> <img src="./img/header-logo.png" alt="Team Renewal Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/about">About Renewal</a></li>
+            <li class="nav-item"><a class="nav-link" href="/marathon"><b>Marathon 2019</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="/#leaderboard">Runners</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#instructions">Register</a></li>
+            <li class="d-none d-lg-block nav-item menu-item-donate">
+                <button class="header-button" onclick="window.location.href='/donate'">DONATE</button>
+            </li>
+        </ul>
     </div>
-    <div class="header-nav d-none d-lg-block">
-        <nav>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="./about.html">About RENEWAL</a></li>
-                <li class="list-inline-item"><a id="navLinkLeader">Leaderboard</a></li>
-                <li class="list-inline-item"><a href="">Register</a></li>
-                <li class="list-inline-item"><a href="./info-for-runners.html"><b>Marathon 2019</b></a></li>
-                <li class="list-inline-item">
-                    <button class="header-button" onclick="window.location.href='./donate.html'">DONATE</button>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <!--<div class="hamburger d-none d-sm-block d-md-block d-lg-none" data-toggle="collapse" data-target="#navbarNav" id="hamburgerToggle">-->
-    <!--x-->
-    <!--</div>-->
-    <nav class="navbar-collapse collapse main-nav" id="navbarNav">
-        <div class="container">
-            <ul class="sections-list list-inline list-unstyled">
-                <li class="list-inline-item"><a id="linkServices" href="#services">SERVICES</a></li>
-                <li class="list-inline-item"><a id="linkWorks" href="#works">WORKS</a></li>
-                <li class="list-inline-item"><a id="linkContact" href="#contacts">CONTACT US</a></li>
-            </ul>
-            <ul class="services-list-top list-unstyled">
-                <li>UI/UX Design</li>
-                <li>Front-End</li>
-                <li>Web apps</li>
-            </ul>
-        </div>
-    </nav>
-</header>
+</nav>
+
 <section class="section-about">
     <div class="container">
         <h2 class="display-4 text-center">
-            About RENEWAL
+            About Renewal
         </h2>
         <article class="about-renewal-content">
             <p>Receiving a diagnosis of irreversible kidney failure can be devastating. That’s where Renewal comes in.
@@ -78,16 +60,49 @@
         </article>
     </div>
 </section>
-<section class="section-how-to-signup">
-    <h2 class="display-4 text-center">
-        How to sign up?
-    </h2>
-</section>
 <footer class="main-footer">
     <div class="container text-center">
-        <div class="copyright text-muted">
-            &copy 2018 TEAM RENEWAL
+        <div class="powered-by-banquest">
+            <img width="100%" src="./img/banquest.png" alt="Powered by Banquest">
         </div>
     </div>
 </footer>
 </body>
+
+<!--<section class="section-about">-->
+    <!--<div class="container">-->
+        <!--<h2 class="display-3 text-center">-->
+            <!--About Marathon-->
+        <!--</h2>-->
+        <!--<div class="about-content">-->
+            <!--<div class="row">-->
+                <!--<div class="col-12 col-sm-12 col-md-6">-->
+                    <!--<article>-->
+                        <!--<h3>-->
+                            <!--<b>RENEWEL HELPS</b>-->
+                            <!--<small class="text-muted">Win the race against time for those who need a kidney.-->
+                                <!--Join us in the race to support this life saving project.-->
+                            <!--</small>-->
+                        <!--</h3>-->
+                        <!--<p>Come be a part of <span>TEAM RENEWAL</span> in the <span>2019 FULL MARATHON AND HALF MARATHON.-->
+                                        <!--The Miami Marathon</span> will take place on-->
+                            <!--<span>SUNDAY JANUARY 27, 2019</span>.-->
+                        <!--</p>-->
+                        <!--<p>If you will be joining us from out of town, we will be glad to help you find-->
+                            <!--accommodations for Shabbos.-->
+                            <!--On Motzei Shabbos we will enjoy a pre-marathon Melave Malka.-->
+                        <!--</p>-->
+                        <!--<p>At that time, you will receive your Official 2019 Team Renewal Marathon T-Shirt and-->
+                            <!--Bib Number along with all of the relevant-->
+                        <!--</p>-->
+                    <!--</article>-->
+                <!--</div>-->
+                <!--<div class="col-12  col-sm-12 col-md-6">-->
+                    <!--<div class="about-img-wrap">-->
+                        <!--<img src="./img/about-us.png" alt="ABOUT TEAM RENEWAL">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
