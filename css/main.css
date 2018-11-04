@@ -3092,7 +3092,7 @@ section.section-hero {
       background: #36D1DC;
       background: -webkit-gradient(linear, left top, right top, from(#5B86E5), to(#36D1DC));
       background: linear-gradient(to right, #5B86E5, #36D1DC);
-      height: 100px;
+      height: 80px;
       position: absolute;
       bottom: 0;
       left: 0;
