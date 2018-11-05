@@ -5,7 +5,7 @@ $(document).ready(function () {
     $('#sponsorAction').click(function () {
         $('html,body').animate({ scrollTop: $("#leaderboard").offset().top }, 'slow');
     });
-    $('.map-image-wrap').zoom({ url: '../img/map-big.jpg' });
+    $('.map-image-wrap').zoom({ url: './img/map-big.jpg' });
 
     window.onscroll = function () {
         myFunction();
