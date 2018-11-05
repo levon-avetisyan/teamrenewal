@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -21,16 +23,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal//about.html">About Renewal</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal//marathon.html"><b>Marathon 2019</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal/about.html">About Renewal</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal/marathon.html"><b>Marathon 2019</b></a></li>
             <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal/index.html#leaderboard">Runners</a></li>
             <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal/index.html#instructions">Register</a></li>
             <li class="d-none d-lg-block nav-item menu-item-donate">
                 <button class="header-button" onclick="window.location.href='https://levon-avetisyan.github.io/teamrenewal/donate.html'">DONATE</button>
-        </ul>
+            </li></ul>
     </div>
 </nav>
-
 <section class="section-runner-setup">
     <div class="container">
         <h2 class="display-4 text-center">Runner Setup</h2>
@@ -52,75 +53,91 @@
                                 that another Live Donor will have the ability to succeed on their personal, unique
                                 journey towards saving a life.
                             </p>
-                            <p>
-                                2019 Team Renewal Miami Marathon:
-                                <small class="text-muted">*You will not be charged if you are not successful in
-                                    attaining your goal.
-                                </small>
-                            </p>
-                            <!--<button class="button-donate" onclick="window.location.href='/donate'">DONATE</button>-->
                         </article>
                     </div>
                     <div class="col-12 col-lg-6">
-                        <div class="about-img-wrap">
+                        <div class="runner-setup-form-wrap">
                             <form action="">
                                 <div class="form-group">
-                                    <label for="">Name</label>
+                                    <label for=""><b>Name</b></label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Address</label>
+                                    <label for=""><b>Address</b></label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Phone</label>
+                                    <label for=""><b>Phone</b></label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Email</label>
+                                    <label for=""><b>Email</b></label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="">T-shirt Size</label>
+                                    <label for=""><b>T-shirt Size</b></label>
                                     <div class="row">
                                         <div class="col-4">
-                                            <input id="tshirtSizeSm" name="tshirt-size" type="radio">
-                                            <label for="tshirtSizeSm">Small</label>
+                                            <div class="mb-2 custom-control custom-radio">
+                                                <input class="custom-control-input" id="tshirtSizeSm" name="tshirt-size"
+                                                       type="radio">
+                                                <label for="tshirtSizeSm" class="custom-control-label">Small</label>
+                                            </div>
                                         </div>
                                         <div class="col-4">
-                                            <input id="tshirtSizeMd" name="tshirt-size" type="radio">
-                                            <label for="tshirtSizeMd">Medium</label>
+                                            <div class="mb-2 custom-control custom-radio">
+                                                <input class="custom-control-input" id="tshirtSizeMd" name="tshirt-size"
+                                                       type="radio">
+                                                <label for="tshirtSizeMd" class="custom-control-label">Medium</label>
+                                            </div>
                                         </div>
                                         <div class="col-4">
-                                            <input id="tshirtSizeLg" name="tshirt-size" type="radio">
-                                            <label for="tshirtSizeLg">Large</label>
+                                            <div class="mb-2 custom-control custom-radio">
+                                                <input class="custom-control-input" id="tshirtSizeLg" name="tshirt-size"
+                                                       type="radio">
+                                                <label for="tshirtSizeLg" class="custom-control-label">Large</label>
+                                            </div>
                                         </div>
-                                        <div class="col-4">
-                                            <input id="tshirtSizeXl" name="tshirt-size" type="radio">
-                                            <label for="tshirtSizeXl">X large</label>
+                                        <div class="col-6 col-sm-4">
+                                            <div class="custom-control custom-radio">
+                                                <input class="custom-control-input" id="tshirtSizeXl" name="tshirt-size"
+                                                       type="radio">
+                                                <label for="tshirtSizeXl" class="custom-control-label">X large</label>
+                                            </div>
                                         </div>
-                                        <div class="col-4">
-                                            <input id="tshirtSizeXxl" name="tshirt-size" type="radio">
-                                            <label for="tshirtSizeXxl">XX large</label>
+                                        <div class="col-6 col-sm-4">
+                                            <div class="custom-control custom-radio">
+                                                <input class="custom-control-input" id="tshirtSizeXxl"
+                                                       name="tshirt-size" type="radio">
+                                                <label for="tshirtSizeXxl" class="custom-control-label">XX large</label>
+                                            </div>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="">Choose Marathon</label>
+                                    <label for=""><b>Choose Marathon</b></label>
                                     <div class="row">
                                         <div class="col-6">
-                                            <input id="halfMarathon" name="marathon-type" type="radio">
-                                            <label for="halfMarathon">Half Marathon</label>
+                                            <div class="custom-control custom-radio">
+                                                <input id="halfMarathon" name="marathon-type" type="radio"
+                                                       class="custom-control-input">
+                                                <label class="custom-control-label" for="halfMarathon">Half
+                                                    Marathon</label>
+                                            </div>
                                         </div>
                                         <div class="col-6">
-                                            <input id="tshirtSizeMd" name="marathon-type" type="radio">
-                                            <label for="tshirtSizeMd">Full Marathon</label>
+                                            <div class="custom-control custom-radio">
+                                                <input class="custom-control-input" id="fullMarathon"
+                                                       name="marathon-type" type="radio">
+                                                <label class="custom-control-label" for="fullMarathon">Full
+                                                    Marathon</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea placeholder="Why are you running" class="form-control"></textarea>
+                                    <textarea placeholder="Why are you running?" class="form-control"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for=""></label>
@@ -135,6 +152,10 @@
                     <a href="mailto:teamrenewal@renewal.org">teamrenewal@renewal.org</a>
                     <b>@teamrenewal</b> <b>#kidneykindness</b>
                 </h5>
+                <p class="mt-3 text-center">
+                    2019 Team Renewal Miami Marathon:
+                    *You will not be charged if you are not successful in attaining your goal.
+                </p>
             </div>
         </div>
     </div>
