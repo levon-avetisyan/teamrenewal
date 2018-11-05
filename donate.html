@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -14,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body class="donate-page">
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light" id="siteNavTop">
     <a class="navbar-brand" href="https://levon-avetisyan.github.io/teamrenewal/index.html">
         <img src="./img/header-logo.png" alt="Team Renewal Logo">
     </a>
@@ -25,11 +23,12 @@
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal/about.html">About Renewal</a></li>
             <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal/marathon.html"><b>Marathon 2019</b></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal/index.html#leaderboard">Runners</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal/runners.html">Runners</a></li>
             <li class="nav-item"><a class="nav-link" href="https://levon-avetisyan.github.io/teamrenewal/index.html#instructions">Register</a></li>
             <li class="d-none d-lg-block nav-item menu-item-donate">
                 <button class="header-button" onclick="window.location.href='https://levon-avetisyan.github.io/teamrenewal/donate.html'">DONATE</button>
-            </li></ul>
+            </li>
+        </ul>
     </div>
 </nav>
 <section class="section-donate">
@@ -84,18 +83,18 @@
                         <input type="text" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="">State</label>
-                        <select name="" id="" class="form-control">
-                            <option selected="selected" value="Please Select">Please Select</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="">Street Address</label>
                         <input type="text" class="form-control">
                     </div>
-                    <div class="form-group mb-1">
-                        <label for="">Zip Code</label>
-                        <input type="text" class="form-control">
+                    <div class="form-group row">
+                        <div class="col-7">
+                            <label class="label-sm" for="">State</label>
+                            <select name="" id="" class="form-control"></select>
+                        </div>
+                        <div class="col-5">
+                            <label class="label-sm" for="">Zip Code</label>
+                            <input type="text" class="form-control">
+                        </div>
                     </div>
                 </div>
                 <div class="section-separator">
