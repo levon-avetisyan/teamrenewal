@@ -3005,6 +3005,55 @@ body.runner-setup-page section.section-runner-setup {
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     padding: 20px 15px; }
+    body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap form .profile-image {
+      border-radius: 50%;
+      position: relative;
+      width: 80px;
+      height: 80px;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      background-position: center;
+      background-size: cover;
+      border: 3px solid #ced4da; }
+      body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap form .profile-image i.fa-user-circle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        font-size: 84px;
+        color: #ced4da;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap form .profile-image label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        margin-bottom: 0; }
+        body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap form .profile-image label i {
+          font-size: 12px;
+          position: absolute;
+          bottom: -3px;
+          right: -4px;
+          border-radius: 50%;
+          border: 2px solid white;
+          padding: 6px;
+          color: white;
+          background-color: #4C86E7; }
+      body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap form .profile-image input {
+        display: none; }
     body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap form label.custom-control-label {
       font-size: 14px; }
     body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap form textarea {
@@ -3631,8 +3680,12 @@ section .container h3.text-muted small {
 
 .donate-modal .modal-dialog {
   background-color: white;
-  border-radius: 12px;
-  width: 100%; }
+  border-radius: 12px; }
+  .donate-modal .modal-dialog .modal-content {
+    background-color: transparent;
+    border: none; }
+    .donate-modal .modal-dialog .modal-content .modal-body {
+      padding: 0; }
   .donate-modal .modal-dialog .donate-form-wrap {
     padding: 20px 10px;
     max-width: initial; }
