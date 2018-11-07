@@ -2928,9 +2928,13 @@ body.donate-page section.section-donate {
     line-height: 14px; }
     .donate-form-wrap form .form-group label.label-sm {
       font-size: 12px; }
+  .donate-form-wrap form input.custom-amount-control {
+    width: 80px; }
   .donate-form-wrap form p.custom-amount {
     margin: 0;
-    margin-top: 8px; }
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold; }
   .donate-form-wrap form textarea.client-comment {
     resize: none; }
   .donate-form-wrap form button.btn-outline-success {
@@ -2948,7 +2952,11 @@ input.form-control[type="text"], textarea.form-control, select.form-control {
       padding: 0 15px; }
   body.donate-page section.section-donate .donate-form-wrap form .btn-group-toggle label.btn {
     font-size: 22px;
-    padding: 10px; } }
+    padding: 10px; }
+  .donate-form-wrap form p.custom-amount {
+    font-size: 18px; }
+  .donate-form-wrap form input.custom-amount-control {
+    width: 110px; } }
 
 @media (min-width: 768px) {
   body.donate-page section.section-donate .donate-form-wrap {
