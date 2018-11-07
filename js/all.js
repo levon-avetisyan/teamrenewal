@@ -39,7 +39,7 @@ $(document).ready(function () {
     });
 
     // Map image zoom
-    $('.map-image-wrap').zoom({ url: './img/map-big.jpg' });
+    $('.map-image-wrap').zoom({ url: '../img/map-big.jpg' });
 
     // Close nav on link click
     $('.navbar-nav>li>a').on('click', function () {
@@ -59,8 +59,10 @@ $(document).ready(function () {
     function myFunction() {
         if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
+            $(document.body).addClass("nav-fixed");
         } else {
             header.classList.remove("sticky");
+            $(document.body).removeClass("nav-fixed");
         }
     }
 
