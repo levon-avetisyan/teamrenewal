@@ -2907,7 +2907,8 @@ body.donate-page section.section-donate {
       border: none;
       -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
               box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-      margin: 0; }
+      margin: 0;
+      padding: 5px 0; }
       .donate-form-wrap form .btn-group-toggle label.btn input {
         display: none; }
       .donate-form-wrap form .btn-group-toggle label.btn.active {
@@ -2927,8 +2928,9 @@ body.donate-page section.section-donate {
     line-height: 14px; }
     .donate-form-wrap form .form-group label.label-sm {
       font-size: 12px; }
-  .donate-form-wrap form label.col-form-label {
-    line-height: 1.5; }
+  .donate-form-wrap form p.custom-amount {
+    margin: 0;
+    margin-top: 8px; }
   .donate-form-wrap form textarea.client-comment {
     resize: none; }
   .donate-form-wrap form button.btn-outline-success {
@@ -2945,7 +2947,8 @@ input.form-control[type="text"], textarea.form-control, select.form-control {
     body.donate-page section.section-donate .donate-form-wrap form .btn-group-toggle.row div[class^=col] {
       padding: 0 15px; }
   body.donate-page section.section-donate .donate-form-wrap form .btn-group-toggle label.btn {
-    font-size: 22px; } }
+    font-size: 22px;
+    padding: 10px; } }
 
 @media (min-width: 768px) {
   body.donate-page section.section-donate .donate-form-wrap {
@@ -2956,25 +2959,28 @@ input.form-control[type="text"], textarea.form-control, select.form-control {
     font-size: 1rem; } }
 
 body.about-page section.section-about {
-  padding: 80px 0; }
+  padding: 80px 0 40px; }
 
 body.about-page section.section-how-to-signup {
   padding: 80px 0;
   background-color: #FEFEFE; }
 
-body.about-page section.section-about {
-  background-color: #FEFEFE;
-  padding: 80px 0 0; }
-
 body.about-page section.about-us-more {
   padding: 40px 0;
-  background-color: #FAFAFA; }
+  background-color: #eceff1; }
+
+body.about-page section.about-us-renewal {
+  padding: 40px 0; }
 
 body.about-page article.about-renewal h3 {
   margin-bottom: 0; }
 
 body.about-page article.about-renewal p {
-  font-size: 20px; }
+  font-size: 17px; }
+
+@media (min-width: 576px) {
+  body.about-page article.about-renewal p {
+    font-size: 19px; } }
 
 body.marathon-page section.section-about-marathon {
   padding: 80px 0; }
@@ -3057,7 +3063,8 @@ body.runner-setup-page section.section-runner-setup {
     body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap form label.custom-control-label {
       font-size: 14px; }
     body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap form textarea {
-      resize: none; }
+      resize: none;
+      height: 200px; }
 
 @media (min-width: 576px) {
   body.runner-setup-page section.section-runner-setup .runner-setup-form-wrap {
@@ -3077,6 +3084,8 @@ body.runner-donate-page section.section-runner-donate {
         width: 100%; }
     body.runner-donate-page section.section-runner-donate .donate-runner-content .runner-bio .progress {
       height: 30px; }
+      body.runner-donate-page section.section-runner-donate .donate-runner-content .runner-bio .progress .progress-bar {
+        background-color: #8EC139; }
   body.runner-donate-page section.section-runner-donate .donation-history .table-responsive {
     max-height: 600px;
     overflow-y: auto; }
@@ -3142,7 +3151,7 @@ body {
   position: relative;
   padding-top: 0;
   min-height: 100%;
-  padding-bottom: 55px;
+  padding-bottom: 79px;
   font-family: 'Nunito', sans-serif !important; }
   body.runners-page section.section-leaderboard .board {
     padding: 0; }
@@ -3151,8 +3160,8 @@ section.section-hero {
   position: relative;
   height: calc(100vh - 80px);
   text-align: center;
-  background-image: url("../img/hero.jpg");
-  background-position: center;
+  background-image: url("../img/background.jpg");
+  background-position: top center;
   background-size: cover; }
   section.section-hero .hero-content {
     position: relative;
@@ -3176,6 +3185,7 @@ section.section-hero {
       margin-bottom: 20px;
       font-size: 40px; }
       section.section-hero .hero-content h1 span {
+        color: #8EC139;
         font-family: 'Fredoka One', cursive; }
     section.section-hero .hero-content h2 {
       font-family: 'Dosis', sans-serif;
@@ -3525,12 +3535,19 @@ section.section-contact {
     section.section-contact .contact-form-wrap address {
       text-align: center;
       color: #001021; }
+      section.section-contact .contact-form-wrap address span {
+        margin-left: 10px; }
       section.section-contact .contact-form-wrap address a {
-        color: #001021; }
+        color: #001021;
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in; }
+        section.section-contact .contact-form-wrap address a:hover {
+          text-decoration: none;
+          opacity: 0.8; }
       section.section-contact .contact-form-wrap address i {
         margin-right: 10px;
         color: #818488;
-        font-size: 20px; }
+        font-size: 16px; }
 
 footer {
   position: absolute;
@@ -3538,11 +3555,53 @@ footer {
   bottom: 0;
   left: 0;
   text-align: center;
-  padding: 4px 0;
-  border-top: 1px solid #ebebeb; }
+  padding: 4px 0; }
+  footer .instagram-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 1px solid #fafafa;
+    padding: 4px 0; }
+    footer .instagram-link a {
+      font-weight: bold;
+      font-size: 16px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      footer .instagram-link a:hover {
+        text-decoration: none; }
+        footer .instagram-link a:hover i {
+          color: #DE2B7C; }
+    footer .instagram-link i {
+      margin-right: 6px;
+      font-size: 26px;
+      color: #C42B95; }
   footer .powered-by-banquest {
-    margin: 0 auto;
-    width: 140px; }
+    background: #fafafa; }
+    footer .powered-by-banquest img {
+      width: 100px; }
 
 button {
   cursor: pointer;
