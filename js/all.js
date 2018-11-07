@@ -39,7 +39,7 @@ $(document).ready(function () {
     });
 
     // Map image zoom
-    $('.map-image-wrap').zoom({ url: '../img/map-big.jpg' });
+    $('.map-image-wrap').zoom({ url: './img/map-big.jpg' });
 
     // Close nav on link click
     $('.navbar-nav>li>a').on('click', function () {
