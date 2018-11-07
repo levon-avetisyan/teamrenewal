@@ -3156,7 +3156,7 @@ body {
   body.runners-page section.section-leaderboard .board {
     padding: 0; }
   body.nav-fixed {
-    padding-top: 80px; }
+    padding-top: 80px !important; }
 
 section.section-hero {
   position: relative;
